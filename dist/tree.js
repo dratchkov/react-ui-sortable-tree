@@ -301,8 +301,8 @@ proto.canMove = function (fromId, toId, placement, canMoveFn) {
 };
 
 proto.move = function (fromId, toId, placement) {
-  //if(!this.canMove(fromId, toId, placement))
-  //  return;
+  if(!this.canMove(fromId, toId, placement))
+   return;
 
   var obj = this.remove(fromId);
   var index = null;
