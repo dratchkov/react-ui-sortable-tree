@@ -1,6 +1,6 @@
 {
   "name": "react-ui-sortable-tree",
-  "version": "2.6.15",
+  "version": "2.6.16",
   "description": "React tree component",
   "main": "index.js",
   "scripts": {
