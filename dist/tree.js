@@ -118,7 +118,7 @@ proto.moveIndex = function (index, dragInfo, e, canMoveFn) {
 
     var treeRect = treeEl.getBoundingClientRect();
     var trgCoord = {
-      x: treeRect.right - 1 - (window.innerWidth - document.documentElement.clientWidth), // scroll bar width, from https://stackoverflow.com/questions/986937/how-can-i-get-the-browsers-scrollbar-sizes
+      x: treeEl.clientWidth - 1, // scroll bar width, from https://stackoverflow.com/questions/986937/how-can-i-get-the-browsers-scrollbar-sizes
       y: dragDirs.vrt >= 0 ? dragRect.bottom : dragRect.top
     };
     var hovMnodeEl = document.elementFromPoint(trgCoord.x, trgCoord.y);
