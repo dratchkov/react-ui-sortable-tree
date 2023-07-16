@@ -118,7 +118,7 @@ proto.moveIndex = function (index, dragInfo, e, canMoveFn) {
 
     var treeRect = treeEl.getBoundingClientRect();
     var trgCoord = {
-      x: treeEl.clientWidth - 1, // scroll bar width, from https://stackoverflow.com/questions/986937/how-can-i-get-the-browsers-scrollbar-sizes
+      x: treeEl.clientWidth - 1,
       y: dragDirs.vrt >= 0 ? dragRect.bottom : dragRect.top
     };
     var hovMnodeEl = document.elementFromPoint(trgCoord.x, trgCoord.y);
@@ -301,8 +301,8 @@ proto.canMove = function (fromId, toId, placement, canMoveFn) {
 };
 
 proto.move = function (fromId, toId, placement) {
-  if(!this.canMove(fromId, toId, placement))
-   return;
+  //if(!this.canMove(fromId, toId, placement))
+  //  return;
 
   var obj = this.remove(fromId);
   var index = null;
